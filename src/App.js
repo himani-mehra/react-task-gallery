@@ -1,49 +1,8 @@
-// import Header from "./components/header/Header";
-// import Footer from "./components/footer/Footer";
-// import Error from "./components/Error";
-// import Home from "./components/home/Home";
-// import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-// import { taskRoutes } from "./constants";
-// import { TaskProvider } from "./utils/TaskContext";
-
-// const AppLayout = () => {
-//   return (
-//     <TaskProvider>
-//       <Header />
-//       <Outlet />
-//       <Footer />
-//     </TaskProvider>
-//   );
-// };
-
-// const appRouter = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <AppLayout />,
-//     errorElement: <Error />,
-//     children: [
-//       {
-//         path: "/",
-//         element: <Home />
-//       },
-//       ...taskRoutes
-//     ]
-//   }
-// ]);
-
-// function App() {
-//   return <RouterProvider router={appRouter} />;
-// }
-
-// export default App;
-
-
-
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Error from "./components/Error";
 import Home from "./components/home/Home";
-import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";  // Changed here
+import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
 import { taskRoutes } from "./constants";
 import { TaskProvider } from "./utils/TaskContext";
 
@@ -57,7 +16,7 @@ const AppLayout = () => {
   );
 };
 
-const appRouter = createHashRouter([  // Changed here
+const appRouter = createHashRouter([
   {
     path: "/",
     element: <AppLayout />,

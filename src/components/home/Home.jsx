@@ -11,7 +11,7 @@ const Home = () => {
      {tasks.map((task, index) => 
   <Link
   to={`/${task.path}`}
-  className="no-underline text-inherit hover:text-inherit"
+  className="link-desktop"
 >
   <Card key={index} title={task.title} />
 </Link>

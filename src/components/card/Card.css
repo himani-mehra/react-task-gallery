@@ -4,18 +4,36 @@
     justify-content: center;
     text-align: center;
     border-radius: 6px;
-    width: 30vh;
-    height: 20vh;
-    padding: 10px;
-    margin: 10px 0 10px 25px;
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    padding: 0.5rem;
+    margin: 1rem;
     cursor: pointer;
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.35);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
 }
 
 .card:hover {
-    font-size: 18px;
+    font-size: 1.1rem;
     transform: translateY(-5px);
     box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.45);
     transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .card {
+        height: 150px;
+        max-width: 90%;
+        margin: 0.5rem auto;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        height: 130px;
+        font-size: 0.9rem;
+    }
 }
