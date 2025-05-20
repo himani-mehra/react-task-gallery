@@ -18,12 +18,12 @@ const AppLayout = () => {
 
 const appRouter = createBrowserRouter([
   {
-    path: "/",
+    path: "/react-task-gallery",
     element: <AppLayout />,
     errorElement: <Error />,
     children: [
       {
-        path: "/",
+        path: "/react-task-gallery",
         element: <Home />
       },
       ...taskRoutes
