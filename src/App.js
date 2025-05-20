@@ -44,7 +44,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Error from "./components/Error";
 import Home from "./components/home/Home";
-import { HashRouter, Routes, Route, Outlet } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { taskRoutes } from "./constants";
 import { TaskProvider } from "./utils/TaskContext";
 
