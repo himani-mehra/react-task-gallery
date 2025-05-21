@@ -46,6 +46,7 @@ const [loading, setLoading] = useState(true);
           alignItems: 'center',
         }}
       >
+        {/* Image shimmer */}
         <div
           style={{
             width: 120,
@@ -57,6 +58,7 @@ const [loading, setLoading] = useState(true);
             marginBottom: 20,
           }}
         />
+        {/* Line one shimmer */}
         <div
           style={{
             height: 24,
@@ -67,6 +69,7 @@ const [loading, setLoading] = useState(true);
             animation: 'shimmer 1.5s infinite',
           }}
         />
+        {/* Line 2 shimmer */}
         <div
           style={{
             height: 18,
