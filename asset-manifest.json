@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-task-gallery/static/css/main.e2b2d2c9.css",
-    "main.js": "/react-task-gallery/static/js/main.5c2518cb.js",
+    "main.css": "/react-task-gallery/static/css/main.d846c69c.css",
+    "main.js": "/react-task-gallery/static/js/main.e27caa14.js",
     "static/js/453.ac56758f.chunk.js": "/react-task-gallery/static/js/453.ac56758f.chunk.js",
     "index.html": "/react-task-gallery/index.html",
-    "main.e2b2d2c9.css.map": "/react-task-gallery/static/css/main.e2b2d2c9.css.map",
-    "main.5c2518cb.js.map": "/react-task-gallery/static/js/main.5c2518cb.js.map",
+    "main.d846c69c.css.map": "/react-task-gallery/static/css/main.d846c69c.css.map",
+    "main.e27caa14.js.map": "/react-task-gallery/static/js/main.e27caa14.js.map",
     "453.ac56758f.chunk.js.map": "/react-task-gallery/static/js/453.ac56758f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2b2d2c9.css",
-    "static/js/main.5c2518cb.js"
+    "static/css/main.d846c69c.css",
+    "static/js/main.e27caa14.js"
   ]
 }
