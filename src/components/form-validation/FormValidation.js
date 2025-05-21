@@ -103,7 +103,7 @@ const FormValidation = () => {
           />
           {errors.confirmPassword && <p>{errors.confirmPassword.message}</p>}
         </div>
-        <button type="submit">Submit</button>
+        <button className="submit-form" type="submit">Submit</button>
       </form>
       {successMsg && (
         <div className="success-tooltip">
