@@ -3,7 +3,7 @@ const tasks = [
   "1. To-Do App with CRUD Operations (local dummy API or json-server)",
   "2. Todo List with Real API Integration (fetch, add, edit, delete tasks)",
   "3. State Management with Context API (global state for user auth and theme toggle with persistence)",
-  "4. Shopping Cart with Redux or Context API (global state management)",
+  "4. Shopping Cart with Redux (global state management)",
   "5. Authentication Flow with Protected Routes (login/logout with React Router and Context API)",
   "6. React Router with Nested Routes (multi-page app with route hierarchy)",
   "7. Form with Validation using React Hook Form (custom validations)",

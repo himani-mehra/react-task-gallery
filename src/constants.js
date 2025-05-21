@@ -63,7 +63,7 @@ export const taskRoutes = [
     { path: "form-validation", title: "Form with Validation" },
     { path: "theme-toggle", title: "Theme Toggle: useContext" },
     { path: "shopping-cart-redux", title: "Shopping Cart (Redux)" },
-    { path: "user-profile-api", title: "User Profile Page with API Data" },
+    { path: "user-profile-api", title: "User Profile Page with API Data & Shimmer effect" },
     { path: "custom-hook-data-fetch", title: "Custom Hook for Data Fetching" },
     { path: "search-filter-component", title: "Search & Filter with Debounce" },
     { path: "debounced-search-api", title: "Debounced Search (API Integration)" },
