@@ -1,6 +1,5 @@
 import TodoApp from "./components/todo-app/TodoApp";
 import TodoApiIntegration from "./components/todo-api-integration/TodoApiIntegration";
-import ContextApiState from "./components/context-api-state/ContextApiState";
 import ShoppingCartRedux from "./components/shopping-cart-redux/ShoppingCartRedux";
 import AuthProtectedRoutes from "./components/auth-protected-routes/AuthProtectedRoutes";
 import FormValidation from "./components/form-validation/FormValidation";
@@ -31,7 +30,7 @@ export const taskRoutes = [
     { path: "todo-crud", element: <TodoApp /> },
     { path: "todo-api-integration", element: <TodoApiIntegration /> },
     { path: "auth-protected-routes", element: <AuthProtectedRoutes /> },
-    { path: "context-api-state", element: <ContextApiState /> },
+    { path: "theme-toggle", element: <ThemeToggle /> },
     { path: "shopping-cart-redux", element: <ShoppingCartRedux /> },
     { path: "form-validation", element: <FormValidation /> },
     { path: "user-profile-api", element: <UserProfileApi /> },
@@ -52,7 +51,6 @@ export const taskRoutes = [
     { path: "accordion-component", element: <AccordionComponent /> },
     { path: "collapsible-menu", element: <CollapsibleMenu /> },
     { path: "file-upload-progress", element: <FileUploadProgress /> },
-    { path: "theme-toggle", element: <ThemeToggle /> },
     { path: "countdown-timer", element: <CountdownTimer /> },
     { path: "optimized-list-virtualization", element: <OptimizedListVirtualization /> },
     { path: "use-memo-heavy-computation", element: <UseMemoHeavyComputation /> }
@@ -63,8 +61,7 @@ export const taskRoutes = [
     { path: "todo-crud", title: "To-Do App" },
     { path: "todo-api-integration", title: "Todo List with API" },
     { path: "form-validation", title: "Form with Validation" },
-    { path: "auth-protected-routes", title: "Authentication with Routes" },
-    { path: "context-api-state", title: "State Management with Context API" },
+    { path: "theme-toggle", title: "Theme Toggle: useContext" },
     { path: "shopping-cart-redux", title: "Shopping Cart (Redux)" },
     { path: "user-profile-api", title: "User Profile Page with API Data" },
     { path: "custom-hook-data-fetch", title: "Custom Hook for Data Fetching" },
@@ -75,10 +72,10 @@ export const taskRoutes = [
     { path: "pagination", title: "Pagination" },
     { path: "infinite-scroll", title: "Infinite Scroll" },
     { path: "global-theme-context", title: "Theme Management with Context" },
-    { path: "theme-toggle", title: "Theme Toggle" },
     { path: "tabs-component", title: "Tabs Component" },
     { path: "modal-component", title: "Modal" },
     { path: "custom-dropdown", title: "Custom Dropdown" },
+    { path: "auth-protected-routes", title: "Authentication with Routes" },
     { path: "accordion-component", title: "Accordion Component" },
     { path: "collapsible-menu", title: "Collapsible Sidebar Menu" },
     { path: "file-upload-progress", title: "File Upload with Progress Bar" },

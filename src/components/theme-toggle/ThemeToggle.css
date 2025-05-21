@@ -1,0 +1,24 @@
+body.light {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  body.dark {
+    background-color: #6e6868;
+    color: #fff;
+  }
+  .toggle-button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  

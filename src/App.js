@@ -5,14 +5,17 @@ import Home from "./components/home/Home";
 import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
 import { taskRoutes } from "./constants";
 import { TaskProvider } from "./utils/TaskContext";
+import {ToggleProvider} from "./utils/ToggleContext"
 
 const AppLayout = () => {
   return (
+    <ToggleProvider>
     <TaskProvider>
       <Header />
       <Outlet />
       <Footer />
     </TaskProvider>
+  </ToggleProvider>  
   );
 };
 

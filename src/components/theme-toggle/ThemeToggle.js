@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { ToggleContext } from "../../utils/ToggleContext";
+import "./ThemeToggle.css"
 
 const ThemeToggle = () => {
-  return (
-    <div>ThemeToggle</div>
-  )
-}
+  const { theme, toggleTheme } = useContext(ToggleContext);
 
-export default ThemeToggle
+  return (
+    <button className="toggle-button" onClick={toggleTheme}>
+      Switch to {theme === "light" ? "dark" : "light"} mode
+    </button>
+  );
+};
+
+export default ThemeToggle;
