@@ -66,8 +66,8 @@ const TodoApp = () => {
                 value={editingValue}
                 onChange={(e) => setEditingValue(e.target.value)}
               />
-              <button onClick={handleSave}>Save</button>
-              <button onClick={handleCancel}>Cancel</button>
+              <button className='text-sm' onClick={handleSave}>Save</button>
+              <button className='text-xs' onClick={handleCancel}>Cancel</button>
             </>
           ) : (
             <>

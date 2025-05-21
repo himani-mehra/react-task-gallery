@@ -1,22 +1,23 @@
-.todo {
+.todo-api-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 600px;
+
+    width: 400px;
     padding: 2rem;
-    margin: auto;
     background-color: #f9fafb;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .todo input {
+}
+
+.todo-api-input {
     padding: 0.5rem;
     flex: 1;
     border: 2px solid #cbd5e1;
@@ -28,11 +29,20 @@
     box-sizing: border-box;
   }
   
-  .todo input:focus {
-    border-color: #3b82f6;
+  /* Adjust width for smaller screens */
+  @media (max-width: 500px) {
+    .todo-api-input {
+      width: 100%;
+      font-size: 0.9rem;
+    }
   }
   
-  .todo button {
+
+.todo-api-input:focus {
+    border-color: #3b82f6;
+}
+
+.todo-api-button {
     padding: 0.5rem 0.8rem;
     background-color: #3b82f6;
     color: white;
@@ -40,13 +50,13 @@
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
-  
-  .todo button:hover {
+}
+
+.todo-api-button:hover {
     background-color: #6f96ea;
-  }
-  
-  .task-list {
+}
+
+.todo-api-task {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -55,47 +65,26 @@
     background-color: #f1f5f9;
     padding: 0.75rem;
     border-radius: 8px;
-  }
-  
-  .items {
+    gap: 5px;
+}
+
+.todo-api-task-item {
     flex-grow: 1;
     font-size: 1rem;
     color: #1f2937;
-  }
-  
-  .task-list button {
-    background: none;
-    border: none;
-    color: #4b5563;
-    font-size: 1.1rem;
-    margin-left: 0.5rem;
-    cursor: pointer;
-  }
-  
-  .task-list button:hover {
-    color: white;
-  }
+}
 
-  @media (max-width: 784px) {
-    .todo {
-      width: 350px;
-      padding: 20px 10px;
-      font-size: 0.9rem;
-    }
-    .task-list {
-      /* display: flex; */
-      justify-content: space-between;
-      align-items: center;
-      /* margin-top: 1rem; */
-      width: 100%;
-      background-color: #f1f5f9;
-      padding: 10px;
-      border-radius: 8px;
-    }
-  }
-  @media (max-width: 500px) {
-    .todo-api-input {
-      width: 100%;
-      font-size: 0.9rem;
-    }
-  }
+.todo-api-task button {
+    padding: 0.5rem 0.8rem;
+    /* background-color: #87abe5;
+    color: white; */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.todo-api-task button:hover {
+    background-color: #5b94ef;
+    color: white;
+}
