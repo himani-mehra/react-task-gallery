@@ -5,17 +5,21 @@ import Home from "./components/home/Home";
 import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
 import { taskRoutes } from "./constants";
 import { TaskProvider } from "./utils/TaskContext";
-import {ToggleProvider} from "./utils/ToggleContext"
+import { ToggleProvider } from "./utils/ToggleContext"
+import { Provider } from "react-redux";
+import store from "./utils/store";
 
 const AppLayout = () => {
   return (
-    <ToggleProvider>
-    <TaskProvider>
-      <Header />
-      <Outlet />
-      <Footer />
-    </TaskProvider>
-  </ToggleProvider>  
+    <Provider store={store}>
+      <ToggleProvider>
+        <TaskProvider>
+          <Header />
+          <Outlet />
+          <Footer />
+        </TaskProvider>
+      </ToggleProvider>
+    </Provider>
   );
 };
 

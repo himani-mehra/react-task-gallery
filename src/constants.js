@@ -1,6 +1,6 @@
 import TodoApp from "./components/todo-app/TodoApp";
 import TodoApiIntegration from "./components/todo-api-integration/TodoApiIntegration";
-import ShoppingCartRedux from "./components/shopping-cart-redux/ShoppingCartRedux";
+import ShoppingCartRedux from "./components/shopping-cart-using-redux/ShoppingCartUsingRedux";
 import AuthProtectedRoutes from "./components/auth-protected-routes/AuthProtectedRoutes";
 import FormValidation from "./components/form-validation/FormValidation";
 import TableSortingFiltering from "./components/table-sorting-filtering/TableSortingFiltering";
@@ -25,13 +25,14 @@ import FileUploadProgress from "./components/file-upload-progress/FileUploadProg
 import CountdownTimer from "./components/countdown-timer/CountdownTimer";
 import OptimizedListVirtualization from "./components/optimized-list-virtualization/OptimizedListVirtualization";
 import UseMemoHeavyComputation from "./components/use-memo-heavy-computation/UseMemoHeavyComputation";
+import Cart from "./components/cart/Cart";
 
 export const taskRoutes = [
     { path: "todo-crud", element: <TodoApp /> },
     { path: "todo-api-integration", element: <TodoApiIntegration /> },
     { path: "auth-protected-routes", element: <AuthProtectedRoutes /> },
     { path: "theme-toggle", element: <ThemeToggle /> },
-    { path: "shopping-cart-redux", element: <ShoppingCartRedux /> },
+    { path: "shopping-cart-using-redux", element: <ShoppingCartRedux /> },
     { path: "form-validation", element: <FormValidation /> },
     { path: "user-profile-api", element: <UserProfileApi /> },
     { path: "custom-hook-data-fetch", element: <CustomHookDataFetch /> },
@@ -53,17 +54,17 @@ export const taskRoutes = [
     { path: "file-upload-progress", element: <FileUploadProgress /> },
     { path: "countdown-timer", element: <CountdownTimer /> },
     { path: "optimized-list-virtualization", element: <OptimizedListVirtualization /> },
-    { path: "use-memo-heavy-computation", element: <UseMemoHeavyComputation /> }
+    { path: "use-memo-heavy-computation", element: <UseMemoHeavyComputation /> },
+    { path: "cart", element: <Cart /> }
   ];
-  
 
   export const tasks = [
     { path: "todo-crud", title: "To-Do App" },
     { path: "todo-api-integration", title: "Todo List with API" },
     { path: "form-validation", title: "Form with Validation" },
     { path: "theme-toggle", title: "Theme Toggle: useContext" },
-    { path: "shopping-cart-redux", title: "Shopping Cart (Redux)" },
-    { path: "user-profile-api", title: "User Profile Page with API Data & Shimmer effect" },
+    { path: "shopping-cart-using-redux", title: "Shopping Cart (Redux)" },
+    { path: "user-profile-api", title: "User Profile Page with API Data & Shimmer" },
     { path: "custom-hook-data-fetch", title: "Custom Hook for Data Fetching" },
     { path: "search-filter-component", title: "Search & Filter with Debounce" },
     { path: "debounced-search-api", title: "Debounced Search (API Integration)" },
@@ -84,5 +85,6 @@ export const taskRoutes = [
     { path: "drag-drop-state-persistence", title: "Drag and Drop with State Persistence" },
     { path: "infinite-scroll-memo", title: "Infinite Scroll with Memoization" },
     { path: "use-memo-heavy-computation", title: "Optimizing Expensive Calculations" },
-    { path: "optimized-list-virtualization", title: "Optimized List Rendering" }
+    { path: "optimized-list-virtualization", title: "Optimized List Rendering" },
+    {path: "cart", title: "Cart Page"}
   ];
